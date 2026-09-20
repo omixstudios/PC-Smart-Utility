@@ -43,18 +43,13 @@
       "target": [
         {
           "target": "nsis",
-          "arch": [
-            "x64"
-          ]
+          "arch": ["x64"]
         },
         {
           "target": "appx",
-          "arch": [
-            "x64"
-          ]
+          "arch": ["x64"]
         }
       ],
-      "icon": "build/icon.ico",
       "requestedExecutionLevel": "asInvoker"
     },
     "appx": {
@@ -64,9 +59,7 @@
       "publisher": "CN=20E2EAE7-48EF-4BDA-AA10-410B141D4F6D",
       "backgroundColor": "#0078D4",
       "showNameOnTiles": true,
-      "languages": [
-        "en-US"
-      ]
+      "languages": ["en-US"]
     },
     "nsis": {
       "oneClick": false,
@@ -74,11 +67,7 @@
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
       "shortcutName": "PC Smart Utility",
-      "installerIcon": "build/icon.ico",
-      "uninstallerIcon": "build/icon.ico",
-      "installerHeaderIcon": "build/icon.ico",
-      "deleteAppDataOnUninstall": false,
-      "include": "build/installer.nsh"
+      "deleteAppDataOnUninstall": false
     }
   },
   "author": "Omix Studios",
