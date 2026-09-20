@@ -43,11 +43,15 @@
       "target": [
         {
           "target": "nsis",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         },
         {
           "target": "appx",
-          "arch": ["x64"]
+          "arch": [
+            "x64"
+          ]
         }
       ],
       "requestedExecutionLevel": "asInvoker"
@@ -59,7 +63,9 @@
       "publisher": "CN=20E2EAE7-48EF-4BDA-AA10-410B141D4F6D",
       "backgroundColor": "#0078D4",
       "showNameOnTiles": true,
-      "languages": ["en-US"]
+      "languages": [
+        "en-US"
+      ]
     },
     "nsis": {
       "oneClick": false,
@@ -68,7 +74,8 @@
       "createStartMenuShortcut": true,
       "shortcutName": "PC Smart Utility",
       "deleteAppDataOnUninstall": false
-    }
+    },
+    "publish": "never"
   },
   "author": "Omix Studios",
   "license": "PolyForm-Noncommercial-1.0.0",
