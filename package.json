@@ -1,0 +1,95 @@
+{
+  "name": "pc-smart-utility",
+  "version": "5.8.7",
+  "description": "PC Smart Utility — an all-in-one Windows PC diagnostic, hardware, network, security, cleanup, and troubleshooting toolkit by OMIX STUDIOS.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win nsis --x64",
+    "build-appx": "electron-builder --win appx --x64",
+    "build-portable": "electron-builder --win portable --x64",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "systeminformation": "^5.22.11",
+    "qrcode": "^1.5.4",
+    "dijkstrajs": "^1.0.3",
+    "pngjs": "^7.0.0"
+  },
+  "devDependencies": {
+    "electron": "^29.4.6",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "OmixStudios.PCSmartUtility",
+    "productName": "PC Smart Utility",
+    "copyright": "Copyright 2025-2026 Omix Studios",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "protocol.js",
+      "mime.js",
+      "index.html",
+      "styles.css",
+      "src/**/*",
+      "assets/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "appx",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "appx": {
+      "applicationId": "PCSmartUtility",
+      "identityName": "OmixStudios.PCSmartUtility",
+      "publisherDisplayName": "Omix Studios",
+      "publisher": "CN=20E2EAE7-48EF-4BDA-AA10-410B141D4F6D",
+      "backgroundColor": "#0078D4",
+      "showNameOnTiles": true,
+      "languages": [
+        "en-US"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "PC Smart Utility",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "deleteAppDataOnUninstall": false,
+      "include": "build/installer.nsh"
+    }
+  },
+  "author": "Omix Studios",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": [
+    "windows",
+    "diagnostics",
+    "hardware",
+    "network",
+    "troubleshooting",
+    "electron",
+    "pc-utility"
+  ]
+}

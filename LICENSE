@@ -1,10 +1,10 @@
-PC Smart Utility is licensed under the PolyForm Noncommercial License 1.0.0.
+PolyForm Noncommercial License 1.0.0
 
 Copyright © 2026 OMIX STUDIOS.
 
-The license permits noncommercial use, modification, and distribution subject to its terms. Commercial use requires separate permission from OMIX STUDIOS.
+SPDX-License-Identifier: PolyForm-Noncommercial-1.0.0
 
-Full license terms:
+The PC Smart Utility source code is made available under the PolyForm Noncommercial License 1.0.0. Commercial use requires separate permission from OMIX STUDIOS.
+
+Official license text:
 https://polyformproject.org/licenses/noncommercial/1.0.0
-
-This notice is not a substitute for the complete license terms; the official PolyForm Noncommercial 1.0.0 terms at the URL above govern use of this software.
